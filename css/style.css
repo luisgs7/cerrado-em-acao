@@ -1,0 +1,149 @@
+/* Paleta de Cores Inspirada no Cerrado e na Logo */
+:root {
+    --primary-color: #38761d; /* Verde escuro da logo */
+    --secondary-color: #f6b26b; /* Laranja/Amarelo da logo */
+    --light-bg: #f3e5d8; /* Fundo claro, cor de areia/terra */
+    --dark-text: #333;
+    --light-text: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Evita que o título seja cortado pela navbar */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-text);
+    background-color: var(--light-bg);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--light-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+    font-size: 1.6rem; /* Aumenta o tamanho da fonte da marca */
+}
+
+.nav-link {
+    color: var(--dark-text) !important;
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte dos links */
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Carrossel */
+.mt-navbar {
+    margin-top: 80px; /* Altura da navbar */
+}
+
+.carousel-item img {
+    max-height: 85vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Seção de Doação */
+#doacao .card {
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+}
+
+#doacao .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+#doacao .btn-primary:hover {
+    background-color: #2a5916; /* Um tom mais escuro do verde */
+    border-color: #2a5916;
+}
+
+/* Rodapé */
+footer#contato {
+    background-color: var(--primary-color) !important;
+}
+
+footer a {
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* Seção da Equipe (Carrossel) */
+#equipe .carousel-control-prev-icon,
+#equipe .carousel-control-next-icon {
+    /* Altera a cor dos ícones padrão do Bootstrap para uma cor escura */
+    filter: invert(1) grayscale(100) brightness(0.5);
+}
+
+#equipe .carousel-item {
+    padding: 0 50px 20px 50px; /* Adiciona espaço para os controles não sobreporem o texto */
+}
+
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+}
+
+/* Botão WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    color: white;
+}
